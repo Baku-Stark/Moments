@@ -1,0 +1,26 @@
+{
+  "name": "moments",
+  "version": "1.0.0",
+  "description": "projeto criado com angular js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baku-Stark/Moments.git"
+  },
+  "keywords": [
+    "angular",
+    "javascript"
+  ],
+  "author": "Baku-Stark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Baku-Stark/Moments/issues"
+  },
+  "homepage": "https://github.com/Baku-Stark/Moments#readme",
+  "dependencies": {
+    "@adonisjs/lucid": "^18.3.0"
+  }
+}
