@@ -61,7 +61,7 @@
 
 <details>
 
-<summary><strong>[🪁] INICIANDO O PROJETO</strong></summary>
+<summary><strong>[🪁] CRIANDO A API</strong></summary>
 
 * `npm init adonis-ts-app@latest` (Última versão do Adonis)
 
@@ -112,5 +112,61 @@
 * **Small** - Zero-dependency, small footprint, plays nice with "tree shaking" packagers
 
 * **CLI** - Includes the uuid command line utility
+
+</details>
+
+<div align="center">
+
+<table>
+
+<thead>
+
+<tr align="center">
+
+<th columnspan="3">Front END</th>
+<th>Back END</th>
+<th>Softwares</th>
+
+</tr>
+
+<tr align="center">
+
+<td>
+
+<img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />
+<img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+<img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+
+</td>
+
+<td>
+
+<img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
+
+</td>
+
+<td>
+
+<img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg" />
+
+</td>
+
+</tr>
+
+</thead>
+
+</table>
+
+</div>
+
+<hr>
+
+<details>
+
+<summary><strong>[🪁] INICIANDO A APLICAÇÃO ANGULAR</strong></summary>
+
+* `ng new <nome-do-projeto>` (Iniciando um projeto Angular)
+
+* `ng serve` (Ativando o servidor)
 
 </details>
