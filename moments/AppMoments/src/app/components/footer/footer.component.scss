@@ -1,0 +1,62 @@
+@import '../assets/sass/variables.scss';
+
+footer{
+    width: 100%;
+    background-color: #f0f8ff;
+
+    div.container-top > .col-12{
+        text-align: center;
+
+        h1{
+            font-size: 12vw;
+            font-family: 'Impact', sans-serif;
+        }
+
+        img{
+            width: 12vw;
+            height: 20vh;
+        }
+    }
+
+    div.container-mid{
+        @include GridLayout-Columns(1fr 1fr);
+
+        @include screenTablet{
+            @include GridLayout-Columns(1fr);
+        }
+
+        div.col{
+            text-align: center;
+
+            div.list-box{
+                padding: 10px 20px;
+    
+                div.list-box-title > h4{
+                    margin-left: 5px;
+                    font-family: 'Impact', sans-serif;
+                }
+    
+                div.list-box-body{
+                    p{
+                        a{
+                            text-decoration: none;
+                            color: #4d4b4b;
+            
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.container-bot > .col-12{
+        text-align: center;
+
+        p{
+            opacity: .7;
+        }
+    }
+}

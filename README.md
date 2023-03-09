@@ -24,8 +24,11 @@
 
 </div>
 
-* `**API RESTful com AdonisJS**`
+* **`API RESTful com AdonisJS`**
     * [Vídeo no YouTube](https://www.youtube.com/watch?v=y8XfJJYhXPE&t=0s&ab_channel=MatheusBattisti-HoradeCodar)
+
+* **`Doodles Images`**
+    * [Open Doodles](https://generator.opendoodles.com/)
 
 <details>
 
@@ -123,11 +126,13 @@
 
 <tr align="center">
 
-<th columnspan="3">Front END</th>
-<th>Back END</th>
-<th>Softwares</th>
+<th>SOFTWARES</th>
 
 </tr>
+
+</thead>
+
+<tbody>
 
 <tr align="center">
 
@@ -136,24 +141,14 @@
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-
-</td>
-
-<td>
-
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
-
-</td>
-
-<td>
-
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg" />
 
 </td>
 
 </tr>
 
-</thead>
+</tbody>
 
 </table>
 
@@ -168,5 +163,17 @@
 * `ng new <nome-do-projeto>` (Iniciando um projeto Angular)
 
 * `ng serve` (Ativando o servidor)
+
+</details>
+
+<details>
+
+<summary><strong>[🪁] COMPONENTES</strong></summary>
+
+* `ng generate component <diretório do component>`
+    * _header_
+    * _footer_
+    * **_pages_**
+        `about`
 
 </details>
