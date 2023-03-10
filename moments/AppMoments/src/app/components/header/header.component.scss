@@ -16,9 +16,15 @@ nav.navbar{
             height: 50px;
         }
 
-        div.navbar-title > h1{
-            margin-bottom: 0 !important;
-            font-family: cursive;
+        div.navbar-title{
+            a{
+                font-family: cursive;
+
+                h1{
+                    margin-bottom: 0 !important;
+                }
+            }
+            
         }
 
         button.navbar-toggler{

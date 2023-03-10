@@ -1,0 +1,74 @@
+legend{
+    margin-bottom: 2vh;
+}
+
+div.form-group{
+    margin-bottom: 5vh;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    label{
+        font-weight: bold;
+    }
+
+    textarea{
+        min-height: 116px;
+        max-height: 320px;
+        resize: vertical;
+    }
+
+    input[type='file']{
+        background-color: #7c7e7e;
+        animation: pulse 3s infinite;
+
+        &:hover{
+            cursor: pointer;
+            animation: none;
+            background-color: #f0f8ff;
+        }
+    }
+
+    input[type='submit']{
+        width: 30vw;
+        font-size: 22px;
+        letter-spacing: 2px;
+        transition: .3s ease-in-out;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        &:hover{
+            letter-spacing: 3px;
+            transition: .3s ease-in-out;
+            color: #F0F0F0;
+            background-color: #111111;
+        }
+    }
+
+    input[type='text'], textarea, input[type='file'], input[type='submit']{
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    div.validation-error > p{
+        opacity: .7;
+        padding: 2px;
+        font-size: 13px;
+        font-style: italic;
+        color: #ff0000;
+        border-left: 3px solid #ff0000;
+    }
+}
+
+@keyframes pulse{
+    0%, 100%{
+        background-color: #f0f8ff;
+    }
+
+    50%{
+        background-color: #7c7e7e;
+    }
+}

@@ -126,7 +126,7 @@
 
 <tr align="center">
 
-<th>SOFTWARES</th>
+<th colspan="5">SOFTWARES</th>
 
 </tr>
 
@@ -139,9 +139,29 @@
 <td>
 
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />
+
+</td>
+
+<td>
+
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+
+</td>
+
+<td>
+
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+
+</td>
+
+<td>
+
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
+
+</td>
+
+<td>
+
 <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg" />
 
 </td>
@@ -174,6 +194,16 @@
     * _header_
     * _footer_
     * **_pages_**
-        `about`
+        * `home`
+        * `about`
+        * `new-moment`
+
+</details>
+
+<details>
+
+<summary><strong>[🪁] SERVIÇOS</strong></summary>
+
+* `ng generate service <diretório do serviço>` (Interação com o banco de dados)
 
 </details>

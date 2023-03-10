@@ -1,0 +1,22 @@
+div.col-12{
+    text-align: center;
+
+    h2{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        span.emojis::before{
+            content: '';
+            animation: word-switch 3s infinite;
+        }
+    }
+}
+
+@keyframes word-switch{
+    from{
+        content: '🌟';
+    }
+
+    to{
+        content: '⭐';
+    }
+}
