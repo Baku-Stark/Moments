@@ -7,7 +7,10 @@
             </h2>
         </div>
         <div class="col-12">
-            <app-moment-form></app-moment-form>
+            <app-moment-form
+                [btnText]="btnText"
+                (onSubmit)="createHandler($event)"
+            ></app-moment-form>
         </div>
     </div>
 </div>

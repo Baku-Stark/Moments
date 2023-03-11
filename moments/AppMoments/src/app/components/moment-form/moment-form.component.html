@@ -42,10 +42,11 @@
                 type="file"
                 name="photo"
                 id="file-photo"
+                (change)="onFileSelected($event)"
             >
         </div>
         <div class="form-group">
-            <input type="submit" value="Compartilhar">
+            <input type="submit" value="{{btnText}}">
         </div>
     </fieldset>
 </form>

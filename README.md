@@ -207,3 +207,11 @@
 * `ng generate service <diretório do serviço>` (Interação com o banco de dados)
 
 </details>
+
+<details>
+
+<summary><strong>[🪁] ENVIRONMENTS</strong></summary>
+
+* `ng generate environments` (Usando a CLI do Angular, comece executando o comando gerar ambientes mostrado aqui para criar o diretório `src/environments/` e configurar o projeto para usar esses arquivos.)
+
+</details>
