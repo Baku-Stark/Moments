@@ -41,6 +41,11 @@ nav.navbar{
 
             ul{
                 margin-bottom: 0 !important;
+
+                li > a.new-moment{
+                    font-weight: bold;
+                    color: #008b8b;
+                }
             }
         }
     }

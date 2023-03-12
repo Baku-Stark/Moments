@@ -1,0 +1,41 @@
+@import '../assets/sass/variables.scss';
+
+div.message{
+    top: 3em;
+    left: -25%;
+    width: 50%;
+    z-index: 101;
+    padding: 1.5em;
+    margin-left: 50%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #dec129;
+    background-color: #faebd7;
+
+    div.message-header{
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: space-between;
+
+        button{
+            cursor: pointer;
+            padding: .5em;
+
+            &:hover{
+                color: #f0f8ff;
+                background-color: #111111;
+            }
+
+            @include screenTablet-bootstrap{
+                i{
+                    font-size: x-large;
+                }
+            }
+        }
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+}

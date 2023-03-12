@@ -12,8 +12,9 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class MomentsService {
-  private baseApiUrl = environment.baseApiUrl
-  private apiUrl = `${this.baseApiUrl}/api/moments`
+  // private baseApiUrl= environment.baseApiUrl
+  
+  private apiUrl:string = `http://localhost:3333/api/moments`
 
   constructor(private http: HttpClient) {}
 
