@@ -1,3 +1,77 @@
+@import '../../assets/sass/variables.scss';
+
+div.container{
+    margin-bottom: 5vh;
+}
+
+div.col-12{
+    text-align: center;
+
+    h2{
+        margin-bottom: 5vh !important;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+
+div.search-container{
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+
+    span.search-icon{
+        padding: 2.8vh;
+        border-radius: 15px 0 0 15px;
+        background-color: #808080;
+
+        &:hover{
+            cursor: pointer;
+            background-color: #494949;
+        }
+
+        i{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    input[type="text"]{
+        width: 65vw;
+        padding: 2vh 1vh;
+    }
+}
+
+div.moments-content{
+    @include GridLayout-Columns(1fr 1fr);
+
+    div.card{
+        width: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #000000;
+    
+        img{
+            max-height: 50vh !important;
+            border-bottom: 1px solid #000000;
+        }
+    
+    }
+    
+    div.card-body{
+        h5{
+            margin-bottom: 5vh;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p.card-text > small{
+            font-size: 9px;
+            font-weight: bold;
+            color: #00000083!important;
+        }
+    }
+}
+
+
 div.carousel-item img{
     height: 70vh;
 }

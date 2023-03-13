@@ -198,6 +198,8 @@
         * `about`
         * `new-moment`
 
+* `npm i @fortawesome/angular-fontawesome` (**fortawesome**)
+
 </details>
 
 <details>

@@ -1,6 +1,75 @@
 <section>
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                <h2>Veja vários momentos!!</h2>
+            </div>
+            <div class="container-fluid">
+                <div class="search-container">
+                    <form method="get">
+                        <span class="search-icon">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input
+                            type="text" name=""
+                            id="search-input"
+                            (input)="search($event)"
+                            placeholder="Busque por um Momento..."
+                        >
+                    </form>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div
+                    class="moments-content"
+                    *ngIf="moments.length > 0; else noMoments"
+                >
+                    <div *ngFor="let moment of moments">
+                        <div class="card mb-3">
+                            <img
+                                src="{{baseApiUrl}}/uploads/{{moment.image}}"
+                                class="card-img-top"
+                                alt="{{moment.title}}"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">{{moment.title}}</h5>
+                                <p class="card-text">
+                                    {{moment.description}}
+                                </p>
+                                <p class="card-text">
+                                    Comentários: 
+                                    {{moment.comments!.length}}
+                                </p>
+                                <p class="card-text">
+                                    <a routerLink="moments/{{moment.id}}">
+                                        Detalhes
+                                    </a>
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        {{moment.updated_at}}
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ng-template #noMoments>
+                    <div class="col-12">
+                        <h2>Não há momentos...</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="/moments/new/">
+                            Crie um Mmento!
+                        </a>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+    <hr class="mt-5 mb-5">
+    <div class="container">
+        <div class="row">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
