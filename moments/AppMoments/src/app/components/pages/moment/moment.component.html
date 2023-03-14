@@ -1,0 +1,70 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 middle">
+                <div *ngIf="moment">
+                    <div class="col-12 header">
+                        <h2>Sobre o Momento</h2>
+                        <span>
+                            <i>Título: {{moment.title}}</i>
+                        </span>
+                    </div>
+                    <div class="card">
+                        <div class="image-card">
+                            <img src="{{baseApiUrl}}/uploads/{{moment.image}}" class="img-fluid" alt="{{moment.id}}">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h4>{{moment.title}}</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    {{moment.description}}
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="col">
+                                    <span>
+                                        <small>{{moment.updated_at}}</small>
+                                    </span>
+                                </div>
+                                <div class="col">
+                                    <button 
+                                        class="edit-btn"
+                                        (click)="editHandler(moment.id!)">
+                                        Editar
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button
+                                        class="remove-btn"
+                                        (click)="removeHandler(moment.id!)">
+                                        Excluir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5 mb-5">
+            <div class="col-12 header">
+                <h2>Comentários</h2>
+            </div>
+            <div class="col-12 container-fluid">
+                <div *ngFor="let comment of moment?.comments">
+                    <div class="coment">
+                        <div class="coment-header">
+                            <h6>{{comment.username}}</h6>
+                        </div>
+                        <div class="coment-body">
+                            <p>
+                                {{comment.text}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

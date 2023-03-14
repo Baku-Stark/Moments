@@ -1,0 +1,123 @@
+@import '../../assets/sass/variables.scss';
+
+div.col-12.header{
+    text-align: center;
+    margin-bottom: 5vh !important;
+
+    h2{
+        margin-bottom: 2vh !important;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    span{
+        opacity: .7;
+    }
+}
+
+div.col-12.middle{
+    padding: 5px 10px;
+
+    div.card{
+        border: 1px solid #000000;
+        @include GridLayout-Columns(1fr 2fr);
+
+        div.image-card{
+            border-right: 1px solid #000000;
+        }
+
+        div.card-body{
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            div.card-header{
+                margin-bottom: 3vh;
+                border-radius: 0 5px 0 0;
+                background-color: #a9a9a9;
+                border-bottom: 1px solid #000000;
+
+                h4{
+                    margin-bottom: 0 !important;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+            }
+
+            div.card-footer{
+                padding: 10px;
+                border-radius: 0 0 5px 0;
+                border-top: none;
+                display: flex;
+                align-items: center;
+                background-color: #a9a9a9;
+
+                div.col{
+                    span > small {
+                        font-size: 0.575em;
+                        opacity: .7;
+                        @include screenPhone{
+                            display: none;
+                        }
+                    }
+
+                    button{
+                        padding: 5px 10px;
+                        font-weight: bold;
+                    }
+
+                    button.edit-btn{
+                        color: #73ac1f;
+                        border: 1px solid #adff2f;
+                        transition: .3s ease-in-out;
+
+                        &:hover{
+                            color: #000000;
+                            background-color: #adff2f;
+                            transition: .3s ease-in-out;
+                        }
+                    }
+
+                    button.remove-btn{
+                        color: #940000;
+                        border: 1px solid #ff0000;
+                        transition: .3s ease-in-out;
+
+                        &:hover{
+                            color: #f0f8ff;
+                            background-color: #ff0000;
+                            transition: .3s ease-in-out;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+div.container-fluid div.coment{
+    padding: 10px;
+    color: #111111;
+    background-color: #969a9e;
+
+    div.coment-header{
+        padding: 10px;
+        margin-bottom: 2vh;
+        border-bottom: 1px solid #000000;
+
+        h6{
+            margin-bottom: 0;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+
+    div.coment-body{
+        padding: 10px;
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
