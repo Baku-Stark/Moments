@@ -1,1 +1,18 @@
-<p>edit works!</p>
+<section *ngIf="moment">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Editando Momento</h2>
+                <span>
+                    <i>Momento: {{moment.title}}</i>
+                </span>
+            </div>
+            <div class="col-12">
+                <app-moment-form
+                    [momentData]="momentData"
+                    [btnText]="btnText">
+                </app-moment-form>
+            </div>
+        </div>
+    </div>
+</section>
