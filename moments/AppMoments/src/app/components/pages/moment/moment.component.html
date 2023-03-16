@@ -45,25 +45,87 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <hr class="mt-5 mb-5">
-            <div class="col-12 header">
-                <h2>Comentários</h2>
-            </div>
-            <div class="col-12 container-fluid">
-                <div *ngFor="let comment of moment?.comments">
-                    <div class="coment">
-                        <div class="coment-header">
-                            <h6>{{comment.username}}</h6>
+                    <hr class="mt-5 mb-5">
+                    <div class="col-12 header">
+                        <h2>Comentários</h2>
+                    </div>
+                    <!-- {{moment.comments!.length}} -->
+                    <div
+                        class="col-12 container-fluid"
+                        *ngIf="moment.comments!.length > 0; else noComments"
+                        >
+        
+                        <div *ngFor="let comment of moment?.comments">
+                            <div class="coment">
+                                <div class="coment-header">
+                                    <h6>{{comment.username}}</h6>
+                                </div>
+                                <div class="coment-body">
+                                    <p>
+                                        {{comment.text}}
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="coment-body">
-                            <p>
-                                {{comment.text}}
+                    </div>
+                    <ng-template #noComments>
+                        <p>
+                            <strong>Não há nenhum comentário...</strong>
+                        </p>
+                    </ng-template>
+                </div>
+                <!-- END OF IF (moment) -->
+            </div>
+        </div>
+        <hr class="mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 header">
+                <h2>Deixe um comentário</h2>
+            </div>
+            <div class="col-12 coment-create">
+                <form
+                    action="post"
+                    [formGroup]="commentForm"
+                    #formDir="ngForm"
+                    (ngSubmit)="onSubmit(formDir)">
+
+                    <div class="form-group">
+                        <label for="user-input" class="title">
+                            Usuário*
+                        </label>
+                        <input type="text" name="user-input" id="user-input" placeholder="Nome do usuário" formControlName="username">
+                        <div *ngIf="userName.invalid && formDir.submitted" class="validation-error">
+                            <p 
+                            *ngIf="userName.errors?.['required']">
+
+                                Nome de usuário é obrigatório.
                             </p>
                         </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="coment-input" class="title">
+                            Comentário*
+                        </label>
+                        <textarea
+                            name="coment-input"
+                            id="description-input"
+                            placeholder="Faça algum comentário sobre o Momento"
+                            formControlName="text"
+                            required
+                        >
+                        </textarea>
+                        <div *ngIf="text.invalid && formDir.submitted" class="validation-error">
+                            <p
+                            *ngIf="text.errors?.['required']">
+
+                                Escreva algum comentário.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Comentar!">
+                    </div>
+                </form>
             </div>
         </div>
     </div>

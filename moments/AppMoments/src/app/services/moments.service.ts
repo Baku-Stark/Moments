@@ -38,4 +38,10 @@ export class MomentsService {
     const url = `${environment.baseApiUrl}/api/moments/${id}`
     return this.http.delete(url)
   }
+
+  editMoment(id:number, formData: FormData): Observable<FormData>{
+    const url = `${environment.baseApiUrl}/api/moments/${id}`
+
+    return this.http.put<FormData>(url, formData)
+  }
 }

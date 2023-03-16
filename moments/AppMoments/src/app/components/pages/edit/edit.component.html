@@ -9,7 +9,8 @@
             </div>
             <div class="col-12">
                 <app-moment-form
-                    [momentData]="momentData"
+                    (onSubmit)="editHandler($event)"
+                    [momentData]="moment"
                     [btnText]="btnText">
                 </app-moment-form>
             </div>
